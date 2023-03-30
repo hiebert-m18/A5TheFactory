@@ -44,7 +44,7 @@ public class Factory {
             } finally {
                 lock.unlock();
             }// end try finally
-        };
+        };// end producerRun
         
         Runnable consumer1Run = () -> {
             double n = 0;
@@ -67,7 +67,7 @@ public class Factory {
                 Thread.sleep(500);
             }
             catch (InterruptedException e) {}
-        };
+        };// end consumer1Run
         
         Runnable consumer2Run = () -> {
             int a = 0;
@@ -90,7 +90,7 @@ public class Factory {
                 Thread.sleep(750);
             }
             catch (InterruptedException e) {}
-        };
+        };// end consumer2Run
         
         Runnable consumer3Run = () -> {
             int a = 0;
@@ -111,7 +111,7 @@ public class Factory {
                 Thread.sleep(1000);
             }
             catch (InterruptedException e) {}
-        };
+        };// end consumer3Run
         
         
         for (int i = 0; i < 100; i++) {
@@ -123,7 +123,7 @@ public class Factory {
             consumer1Thread.start();
             consumer2Thread.start();
             consumer3Thread.start();
-        }
+        }// end for
     
         // ***** Closing Message *****
         // System.out.println();

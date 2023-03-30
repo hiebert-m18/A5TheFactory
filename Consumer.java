@@ -1,23 +1,24 @@
 import java.util.ArrayList;
 
-/**
- * Write a description of class Consumer1 here.
- *
- * @author (your name)
- * @version (a version number or a date)
- */
+/******************************************************
+ *  Name:           Hiebert
+ *  Class:          CS40S
+ * 
+ *  Assignment:     Assignment 5: The Factory
+ * 
+ *  Description:    The Factory
+ * 
+ ******************************************************/
+
 public class Consumer
 {
-    /**
-     * Constructor for objects of class Consumer1
-     */
     public Consumer() {}
 
     /**
-     * An example of a method - replace this comment with your own
+     * A method to take an item from the shelf
      *
-     * @param  y  a sample parameter for a method
-     * @return    the sum of x and y
+     * @param       the shelf
+     * @return      the product that was taken from the shelf
      */
     public int takeItem(ArrayList<Integer> shelf) {
         int lastItemIndex = shelf.size() - 1;

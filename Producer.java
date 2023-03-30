@@ -1,24 +1,24 @@
 import java.util.ArrayList;
 import java.util.Random;
 
-/**
- * Write a description of class Producer here.
- *
- * @author (your name)
- * @version (a version number or a date)
- */
+/******************************************************
+ *  Name:           Hiebert
+ *  Class:          CS40S
+ * 
+ *  Assignment:     Assignment 5: The Factory
+ * 
+ *  Description:    The Factory
+ * 
+ ******************************************************/
+
 public class Producer
 {
-    /**
-     * Constructor for objects of class Producer
-     */
     public Producer() {}
 
     /**
-     * An example of a method - replace this comment with your own
+     * A method to add an item to the shelf.
      *
-     * @param  y  a sample parameter for a method
-     * @return    the sum of x and y
+     * @param       the shelf, random number generator
      */
     public void stockShelf(ArrayList<Integer> shelf, Random random) {
         if (shelf.size() != 5) {
