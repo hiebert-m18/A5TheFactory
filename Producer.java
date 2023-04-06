@@ -21,7 +21,7 @@ public class Producer
      * @param       the shelf, random number generator
      */
     public void stockShelf(ArrayList<Integer> shelf, Random random) {
-        if (shelf.size() != 1000) {
+        if (shelf.size() != 5) {
             shelf.add(random.nextInt(10));
             System.out.println(Thread.currentThread().getName() + " has added an item to the shelf. There are " + shelf.size() + " items on the shelf.");
         } else {
